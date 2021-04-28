@@ -8,6 +8,7 @@ body{
     background-size: cover;
     background:linear-gradient(to right bottom,rgb(2, 2, 2),rgb(100, 92, 92));
    background-position: center;
+   overflow:hidden;
    
    
 }
