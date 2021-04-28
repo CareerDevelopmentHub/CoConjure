@@ -1,44 +1,53 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Register Form</title>
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and Registration Form </title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
 
-<body>
-  <form action="insert.php" method="POST">
-    <table>
-      <tr>
-        <td>Name :</td>
-        <td><input type="text" name="username" required></td>
-      </tr>
-      <tr>
-        <td>Address</td>
-        <td><input type="text" name="address" required></td>
-      </tr>
-      <tr>
-        <td>Vaccine :</td>
-        <td>
-          <input type="radio" name="vaccine" value="I" required>Covaxin
-          <input type="radio" name="vaccine" value="F" required>Covisheild
-          <input type="radio" name="vaccine" value="N" required>Not Available
-        </td>
-      </tr>
-      <tr>
-        <td>Email :</td>
-        <td><input type="email" name="email" required></td>
-      </tr>
-      <tr>
-        <td>Phone no :</td>
-        <td>
-          <input type="phone" name="phone" required>
-        </td>
-      </tr>
-      <tr>
-        <td><input type="submit" value="Submit" name="submit"></td>
-      </tr>
-    </table>
-  </form>
-</body>
-
+    <body>
+      <form action="insert.php" method="POST">4
+        
+        <div class="hero">
+          <h1>Registration Form</h1>
+                    <table class="form-box">
+                    <tr>
+                      <td class="hi">Name    :</td>
+                      <td><input type="text" class="size" name="username" required></td>
+                    </tr>   
+                    <tr>
+                      <td class="hi">Address:</td>
+                      <td><input type="text" class="size" name="address" required></td>
+                    </tr>
+                    <tr>
+                      <td class="hi">Vaccine:</td>
+                      <td>
+                        <input type="radio"   class="check" name="vaccine" value="I" required>Covaxin
+                        <input type="radio"  class="check" name="vaccine" value="F" required>Covisheild
+                        <input type="radio"  class="check" name="vaccine" value="N" required>Not Available
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hi">Email :</td>
+                      <td><input type="email"  class="size" name="email" required></td>
+                    </tr>
+                    <tr>
+                      <td class="hi">Phone no:</td>
+                      <td>
+                        <input type="phone"  class="size" name="phone" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="submit"  class="submitbtn"  value="Submit" name="submit"></center></td>
+                    </tr>
+                </table>
+                
+              </div>  
+    
+      </form>
+        </script>
+    </body>
 </html>
