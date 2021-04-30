@@ -7,11 +7,14 @@ body {
 .container{
     position: absolute;
     text-align: center;
-    top: 30%;
+    
     width: 100%;
     color: aliceblue;
 }
 #particles-js {
     background: black;
-    height: 100vh;
+    height: 20vh;
+}
+.table-responsive{
+    padding: 20px;
 }
