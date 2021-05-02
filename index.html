@@ -6,76 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>CoConjure</title>
   <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/70839355?s=200&v=4">
-  <style>
-    body {
-      background-color: rgb(0, 0, 0);
-    }
-  </style>
+  <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-  <header class="text-gray-600 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <img src="https://avatars.githubusercontent.com/u/70839355?s=200&v=4" stroke-linecap="round"
-          stroke-linejoin="round" class="w-10 h-10 rounded-full" viewBox="0 0 24 24">
-        <span class="ml-3 text-xl">CoConjure</span>
+  <div class="mobile-container">
+    <div class="topnav">
+      <a href="index.html" class="active">CoConjure</a>
+      <div id="Links">
+        <a href="./Tacker/coronatracker.html">Corona Tracker</a>
+        <a href="./Map/map.html">Nearest Hospital</a>
+        <a href="">Register</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="link()">
+        <i class="fa fa-bars"></i>
       </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      </nav>
-      <button
-        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Register
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
     </div>
-  </header>
 
+    <div class="tab">
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h2 class="text-xs text-lg tracking-widest font-medium title-font mb-1">CoConjure</h2>
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-indigo-500">COVID-19 Live Report</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-white">Live statistics and coronavirus news tracking the number
-          of confirmed cases, recovered patients, tests, and death toll due to the COVID-19 coronavirus.</p>
-        <a class="mr-5 text-indigo-500 hover:text-gray-900" href="./Tacker/coronatracker.html">Corona Tracker</a>
-      </div>
-      <div class="flex flex-wrap">
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-0">
-          <h2 class="text-lg sm:text-xl text-indigo-500 font-medium title-font mb-2">Nearest COVID-19 Center</h2>
-          <p class="leading-relaxed text-white mb-4">Know about the COVID-19 Centres, both government and private, near
-            to you. These Test centres provide real-time RT-PCR,TrueNat Test and CBNAAT Test for COVID-19.</p>
-          <a class="text-indigo-500 inline-flex items-center" href="./Map/map.html">Nearest Hospital
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-
-        <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-0 md:ml-auto mr-50">
-          <h2 class="text-lg sm:text-xl text-indigo-500 font-medium title-font mb-2">Crowd Sourcing</h2>
-          <p class="leading-relaxed text-white mb-4">One of the best and easist way to collect the data requierd is
-            Crowd Sourcing.</p>
-          <a class="text-indigo-500 inline-flex items-center" href="./Crowd_Sourcing/form.html">Crowd Sourcing
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <button
-        class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Emergency
-        Call</button>
+      <table>
+        <tr>
+          <th><a href="./Tacker/coronatracker.html">Active</a></th>
+          <th><a href="./Tacker/coronatracker.html">New Confirmed</a></th>
+          <th><a href="./Tacker/coronatracker.html">Recovered</a></th>
+          <th><a href="./Tacker/coronatracker.html">New Recovered</a></th>
+          <th><a href="./Tacker/coronatracker.html">Death</a></th>
+          <th><a href="./Tacker/coronatracker.html">New Death</a></th>
+        </tr>
+        <tr>
+          <td id="1"></td>
+          <td id="2"></td>
+          <td id="3"></td>
+          <td id="4"></td>
+          <td id="5"></td>
+          <td id="6"></td>
+        </tr>
+      </table>
     </div>
-  </section>
-
+  </div>
   <footer class="text-gray-600 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -114,5 +86,6 @@
     </div>
   </footer>
 </body>
+<script src="./JS/index.js"></script>
 
 </html>
