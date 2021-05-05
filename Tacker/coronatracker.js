@@ -15,6 +15,7 @@ fetch("https://api.covid19india.org/data.json")
     });
 
     document.getElementById("data").innerHTML = temp;
+    
   })
   .catch((error) => {
     console.log(`Error: ${error}`);
