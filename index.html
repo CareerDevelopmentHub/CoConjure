@@ -1,101 +1,170 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#007897" />
+    <link rel="manifest" href="Manifest.json" />
+    <link rel="apple-touch-icon" href="./assets/images/i1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>CoConjure</title>
+    <link
+      rel="shortcut icon"
+      href="https://avatars.githubusercontent.com/u/70839355?s=200&v=4"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#007897">
-  <link rel="manifest" href="Manifest.json">
-  <link rel="apple-touch-icon" href="./assets/images/i1.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>CoConjure</title>
-  <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/70839355?s=200&v=4">
-  <link rel="stylesheet" href="./CSS/style.css">
-</head>
-
-<body>
-  <div class="mobile-container">
-    <div class="topnav">
-      <a href="index.html" class="active">CoConjure</a>
-      <div id="Links">
-        <a href="./Tacker/coronatracker.html">Corona Tracker</a>
-        <a href="./Map/map.html">Nearest Hospital</a>
-        <a href="">Register</a>
+  <body>
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="index.html" class="active">CoConjure</a>
+        <div id="Links">
+          <a href="./Tacker/coronatracker.html">Corona Tracker</a>
+          <a href="./Map/map.html">Nearest Hospital</a>
+          <a href="">Register</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="link()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="link()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="card">
-      <div class="card-text">
-        <span class="date">4 days ago </span>
-        <h2>Post one</h2>
-        <p>Lorem ipsum dolor sit amet reprehenderit!</p>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3><a href="./Tacker/coronatracker.html">Confirmed</a></h3>
+            <p id="2">+</p>
+            <p id="7">Some text</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><a href="./Tacker/coronatracker.html">Active</a></h3>
+            <p id="1">Some text</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><a href="./Tacker/coronatracker.html">Recovered</a></h3>
+            <p id="4"></p>
+            <p id="3"></p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <h3><a href="./Tacker/coronatracker.html">Deceased</a></h3>
+            <p id="6"></p>
+            <p id="5"></p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="tab">
-
-      <table>
-        <tr>
-          <th><a href="./Tacker/coronatracker.html">Active</a></th>
-          <th><a href="./Tacker/coronatracker.html">New Confirmed</a></th>
-          <th><a href="./Tacker/coronatracker.html">Recovered</a></th>
-          <th><a href="./Tacker/coronatracker.html">New Recovered</a></th>
-          <th><a href="./Tacker/coronatracker.html">Death</a></th>
-          <th><a href="./Tacker/coronatracker.html">New Death</a></th>
-        </tr>
-        <tr>
-          <td id="1"></td>
-          <td id="2"></td>
-          <td id="3"></td>
-          <td id="4"></td>
-          <td id="5"></td>
-          <td id="6"></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <footer class="text-gray-600 body-font">
-    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="https://avatars.githubusercontent.com/u/70839355?s=200&v=4" stroke-linecap="round"
-          stroke-linejoin="round" class="w-10 h-10 rounded-full" viewBox="0 0 24 24">
-        <span class="ml-3 text-xl">CoConjure</span>
-      </a>
-      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021
-        CoConjure -
-        <a href="http://bit.do/cwc-iter" class="text-gray-600 ml-1" rel="noopener noreferrer"
-          target="_blank">CWC-ITER</a>
-      </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a class="text-gray-500" href="https://www.facebook.com/Coding-Wizard-108139571018885">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-            viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/70839355?s=200&v=4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-10 h-10 rounded-full"
+            viewBox="0 0 24 24"
+          />
+          <span class="ml-3 text-xl">CoConjure</span>
         </a>
-        <a class="ml-3 text-gray-500" href="https://www.instagram.com/iter.coding.wizards/">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/coding-wizard-club/">
-          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
-            class="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none"
-              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-          </svg>
-        </a>
-      </span>
-    </div>
-  </footer>
-</body>
-<script src="./JS/index.js"></script>
-
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2021 CoConjure -
+          <a
+            href="http://bit.do/cwc-iter"
+            class="text-gray-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >CWC-ITER</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a
+            class="text-gray-500"
+            href="https://www.facebook.com/Coding-Wizard-108139571018885"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="ml-3 text-gray-500"
+            href="https://www.instagram.com/iter.coding.wizards/"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="ml-3 text-gray-500"
+            href="https://www.linkedin.com/in/coding-wizard-club/"
+          >
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+  <script src="./JS/index.js"></script>
 </html>

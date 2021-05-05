@@ -9,12 +9,14 @@ async function getapi(){
     var newrecovered=geid("4");
     var death=geid("5");
     var newdeath=geid("6");
+    var confirmed=geid("7");
+    confirmed.innerHTML=country.TotalConfirmed;
     active.innerHTML=country.TotalConfirmed;
-    newconfimed.innerHTML=country.NewConfirmed;
+    newconfimed.innerHTML='+'+country.NewConfirmed;
     recoverd.innerHTML=country.TotalRecovered;
-    newrecovered.innerHTML=country.NewRecovered;
+    newrecovered.innerHTML='+'+country.NewRecovered;
     death.innerHTML=country.TotalDeaths;
-    newdeath.innerHTML=country.NewDeaths;
+    newdeath.innerHTML='+'+country.NewDeaths;
 }
 function geid(selectorText) {
     return document.getElementById(selectorText);
