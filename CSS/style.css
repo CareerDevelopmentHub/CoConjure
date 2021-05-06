@@ -100,11 +100,35 @@ td {
 }
 
 /* Style the counter cards */
-.card {
+.card1 {
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #ea9cb5;
+  height: 100px;
+}
+.card2 {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #64b5f6;;
+  height: 100px;
+}
+.card3 {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: lightgreen;
+  height: 100px;
+}
+.card4 {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #b7bbbf;
   height: 100px;
 }
