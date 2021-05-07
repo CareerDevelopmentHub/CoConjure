@@ -95,40 +95,46 @@ body {
 }
 
 /* Style the counter cards */
-.card1 {
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #ea9cb5;
-  height: 100px;
-}
-.card2 {
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #64b5f6;;
-  height: 100px;
-}
-.card3 {
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: lightgreen;
-  height: 100px;
-}
+.card1,
+.card2,
+.card3,
 .card4 {
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #b7bbbf;
   height: 100px;
+}
+.card1 {
+  background-color: #ea9cb5;
+}
+.card2 {
+  background-color: #64b5f6;
+}
+.card3 {
+  background-color: lightgreen;
+}
+.card4 {
+  background-color: #b7bbbf;
 }
 aside {
   position: relative;
   margin-right: 5px;
   float: right;
+}
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
