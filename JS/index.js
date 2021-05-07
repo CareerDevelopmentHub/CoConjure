@@ -66,7 +66,7 @@ fetch("https://api.covid19india.org/data.json")
     console.log(`Error: ${error}`);
   });
 
-  var snowStorm = (function (window, document) {
+ /* var snowStorm = (function (window, document) {
 
     this.autoStart = true;
     this.excludeMobile = true;
@@ -694,3 +694,4 @@ fetch("https://api.covid19india.org/data.json")
     return this;
 
 }(window, document));
+*/
