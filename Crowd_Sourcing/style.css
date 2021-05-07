@@ -4,10 +4,10 @@
     font-family:sans-serif;
     }
 body{
-    background-color:black;
+    background: url("https://3ncridad6ai1jg5mt30vexk1-wpengine.netdna-ssl.com/wp-content/uploads/elementor/thumbs/AdobeStock_327379389-p4luieuhb7bytvf39jl3d7dg0hvelamfzkakvwrijc.jpeg");
     background-size: cover;
     background:linear-gradient(to right bottom,rgb(2, 2, 2),rgb(100, 92, 92));
-   background-position: center;
+    background-position: center;
    overflow:hidden;
    
    
@@ -18,18 +18,6 @@ h1{
     text-transform: uppercase;
     animation:changedes 1s infinite;
 }
-
-
-@keyframes changedes
-{
-    0%{color:white;}
-   25%{color:rgb(146, 142, 142)}
-    50%{color:rgb(197, 197, 240);}
-    100%{color:rgb(161, 161, 161);}
-   
-
-}
-
 
 .form-box
 {
