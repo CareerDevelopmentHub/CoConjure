@@ -116,23 +116,27 @@ body {
 }
 .card1 {
   /*background-color: #ea9cb5;*/
-  background: linear-gradient(to bottom right,#f73333, rgb(126, 125, 125));
+  background: linear-gradient(to bottom right,#f73333, rgb(223, 222, 222));
   font-weight: bolder;
+  box-shadow: 3.5px 3px 3px white;
 }
 .card2 {
   /*background-color: #64b5f6;*/
-  background: linear-gradient(to bottom right,#4aa8f5,rgb(126, 125, 125));
+  background: linear-gradient(to bottom right,#4aa8f5,rgb(223, 222, 222));
   font-weight: bolder;
+  box-shadow: 3.5px 3px 3px white;
 }
 .card3 {
   /*background-color: lightgreen;*/
-  background: linear-gradient(to bottom right,rgb(99, 247, 99),rgb(126, 125, 125));
+  background: linear-gradient(to bottom right,rgb(99, 247, 99),rgb(224, 222, 222));
   font-weight: bolder;
+  box-shadow: 3.5px 3px 3px white;
 }
 .card4 {
  /* background-color: #b7bbbf;*/
-  background: linear-gradient(to bottom right,#b7bbbf,rgb(126, 125, 125));
+  background: linear-gradient(to bottom right,#b7bbbf,rgb(223, 222, 222));
   font-weight: bolder;
+  box-shadow: 3.5px 3px 3px white;
 }
 aside {
   position: relative;
@@ -142,17 +146,18 @@ aside {
 }
 .card1:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  
+  box-shadow: 3px 3px 3px white;
 }
 .card2:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 3px 3px 3px white;
 }
 .card3:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 3px 3px 3px white;
 }
 .card4:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 3px 3px 3px white;
 }
