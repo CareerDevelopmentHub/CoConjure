@@ -67,7 +67,7 @@ fetch("https://api.covid19india.org/data.json")
   .catch((error) => {
     console.log(`Error: ${error}`);
   });
-
+/*
 var snowStorm = (function (window, document) {
   this.autoStart = true;
   this.excludeMobile = true;
@@ -723,3 +723,4 @@ var snowStorm = (function (window, document) {
 
   return this;
 })(window, document);
+*/
